@@ -20,6 +20,7 @@ a:visited {
 
 /* Nav Bar */
 #nav {
+    z-index: 99;
     position: fixed;
     padding-top: 1%;
     width: 100%;
@@ -33,7 +34,6 @@ a:visited {
 .logo {
     font-size: 2em;
     margin-left: 5%;
-    cursor: pointer;
 }
 .accounts {
     display: flex;
@@ -191,6 +191,7 @@ nav ul li {
     font-size: 1.5em;
 }
 .about ul {
+    padding-top: 2%;
     display: table;
     margin: auto;
     font-size: 1.3em;
