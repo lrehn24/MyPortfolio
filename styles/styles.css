@@ -36,17 +36,18 @@ a:visited {
     margin-left: 5%;
 }
 .accounts {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    text-align: center;
     color: black;
-    font-size: 2.5em;
     cursor: pointer;
+    width: 25%;
+    overflow: auto;
 }
-.accounts span {
+.accounts img {
+    display: inline-block;
     padding: 10px;
+    width: 20%;
 }
-.accounts span:hover {
+.accounts img:hover {
     transition: all .5s ease-in-out;
     transform: translateY(-10%);
 }
@@ -68,8 +69,10 @@ nav ul li {
     position: absolute;
     right: 40px;
     display: none;
-    font-size: 2.5em;
     cursor: pointer;
+}
+.icon img {
+    width: 20%;
 }
 .bg-img img {
     margin-top: -35%;
@@ -131,11 +134,11 @@ nav ul li {
     padding-right: 3%;
     text-align: center;
 }
-.resume span {
-    font-size: 4em;
+.resume img {
+    width: 10%;
     cursor: pointer;
 }
-.resume span:hover {
+.resume img:hover {
     transition: all ease .7s;
     transform: scale(1.3);
 }
@@ -164,15 +167,15 @@ nav ul li {
     width: 45%;
     padding: 2.5%;
 }
-.project img {
+.img-project {
     width: 100%;
     box-shadow: -3px -3px 5px #ff9800;
 }
-.project span {
+.img-icon {
     margin-top: 3%;
-    font-size: 1.75em;
+    width: 10%;
 }
-.project span:hover {
+.img-icon:hover {
     transition: all ease-in-out .5s;
     transform: scaleX(1.25) scaleY(1.25);
 }
@@ -203,8 +206,7 @@ nav ul li {
     nav ul {
         position: absolute;
         top: 60px;
-        right: 0px;
-        margin-right: 0px;
+        right: 15px;
         display: block;
     }
     .logo {
@@ -212,7 +214,7 @@ nav ul li {
         margin-left: 7%;
     }
     nav ul li {
-        font-size: 1.25em;
+        font-size: 2em;
         margin-right: 10px;
         display: block;
         background-color: #fff;
@@ -220,6 +222,7 @@ nav ul li {
     }
     .icon {
         display: block;
+        margin-right: -10%;
     }
     .topNav {
         position: absolute;
@@ -229,9 +232,9 @@ nav ul li {
         display: block;
     }
     .accounts {
-        margin-right: 35%;
+        margin-right: 30%;
     }
-    .accounts span {
+    .accounts img {
         padding: 5px;
     }
     /* greeting and resume edit */
@@ -249,8 +252,14 @@ nav ul li {
 
 @media (max-width: 500px) {
     /* nav edit */
+    nav {
+        padding-left: 5%;
+    }
     .accounts {
-        font-size: 2em;
+        margin-right: 40%;
+    }
+    .accounts img {
+        width: 25%;
     }
     .logo {
         font-size: .8em;
@@ -260,29 +269,31 @@ nav ul li {
         margin-right: 0;
     }
     nav ul li {
-        font-size: 1em;
+        font-size: 1.25em;
     }
     .icon {
         display: block;
-        right: 20px;
+        right: 0px;
     }
     /* greeting and resume edit */
     .main-info {
         display: block;
         border-bottom: 2px solid black;
+        margin-bottom: 5%;
     }
     .greeting {
         display: inline;
-        text-align: center;
     }
     .greeting h1 {
-        font-size: 1.5em;
+        font-size: 2em;
+        text-align: center;
     }
     .resume span {
         margin-top: 5%;
     }
     .resume p {
         margin-top: 3%;
+        margin-bottom: 10%;
     }
     .welcome {
         width: 100%;
@@ -290,5 +301,11 @@ nav ul li {
     }
     .project-display {
         width: 100%;
+    }
+    .project-display h1 {
+        font-size: 2em;
+    }
+    .about h1 {
+        font-size: 2em;
     }
 }
